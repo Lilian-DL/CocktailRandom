@@ -39,14 +39,6 @@ const styles = StyleSheet.create({
         borderRadius: 500 / 2,
         marginBottom: 30,
     },
-    safeContainer: {
-        flex: 1,
-        marginTop: StatusBar.currentHeight || 0,
-    },
-    container: {
-        paddingHorizontal: 20,
-        marginTop: 20,
-    },
     containerMain: {
         flex: 1,
         backgroundColor: '#fff',

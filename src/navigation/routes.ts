@@ -1,4 +1,5 @@
 export enum Routes {
-    RANDOM_SCREEN = 'Random',
-    COCKTAIL_NAME_SCREEN = 'Cocktail Name',
+    RANDOM_SCREEN = 'Random Cocktail',
+    COCKTAIL_SEARCH_SCREEN = 'Search',
+    COCKTAIL_NAME_SCREEN = 'Cocktail Name'
 }

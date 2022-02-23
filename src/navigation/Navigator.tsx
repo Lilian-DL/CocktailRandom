@@ -3,6 +3,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { CocktailRandomScreen } from '../screens/CocktailRandomScreen';
+import { CocktailSearchScreen } from '../screens/CocktailSearchScreen';
 import { Routes } from './routes';
 
 
@@ -14,7 +15,7 @@ export const Navigator = (props: Props) => {
         <NavigationContainer>
             <Tab.Navigator>
                 <Tab.Screen name={Routes.RANDOM_SCREEN} component={CocktailRandomScreen} />
-                <Tab.Screen name={Routes.COCKTAIL_NAME_SCREEN} component={CocktailRandomScreen} />
+                <Tab.Screen name={Routes.COCKTAIL_SEARCH_SCREEN} component={CocktailSearchScreen} />
             </Tab.Navigator>
         </NavigationContainer>
     )
