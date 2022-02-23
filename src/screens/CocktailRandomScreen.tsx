@@ -1,17 +1,13 @@
 import React from "react";
 import {
-    SafeAreaView,
     StyleSheet,
     Text,
     StatusBar,
-    FlatList,
     View,
     Image,
     Button,
 } from "react-native";
-import { Card, Paragraph, Title } from "react-native-paper";
-
-// import { default as data } from "../../api/data.json";
+import { Title } from "react-native-paper";
 import { useCocktailRandom } from "../hooks/useRandomCocktail";
 
 export const CocktailRandomScreen = () => {
@@ -24,16 +20,10 @@ export const CocktailRandomScreen = () => {
         return <Text>Error</Text>;
     }
 
-    console.log(data.drinks[0]);
-    const img = data.drinks[0].strDrinkThumb;
-    console.log(img);
-
-
-
     return (
         <View style={styles.containerMain}>
             <Title style={styles.title}>{data.drinks[0].strDrink}</Title>
-            <Image style={styles.img} source={{ uri: img }} />
+            <Image style={styles.img} source={{ uri: data.drinks[0].strDrinkThumb }} />
             <Button onPress={() => refetch()} title="Refresh" />
         </View >
     );
